@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.museumkaart.nl/Services/SchatkamerService.svc/GetSearchResult?&start=0&count=100&keyword=%27Museum+Nijkerk%27&city=%27%27&longitude=%27%27&lattitude=%275.483039%27&distance=%273%27&provinceFilter=%27%27&startdate=%27%27&enddate=%27%27&lastChance=0&filters=%27%27&lFacilities=%27%27&mFacilities=%27%27&type=-1&card=1&cityName=%27%27&theme=&allMembers=&kidsProof=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - private
+      content-length:
+      - '2113'
+      content-type:
+      - application/atom+xml;charset=utf-8
+      server:
+      - Microsoft-IIS/7.5
+      set-cookie:
+      - .ASPXANONYMOUS=qGq_4r8n0QEkAAAAMjFkYzA3YTItYzhjNi00YjY2LWFlNTYtYThmNjhmMjhjYmU50;
+        expires=Wed, 25-Nov-2015 20:28:46 GMT; path=/; HttpOnly
+      - ASP.NET_SessionId=saawo0z4ujcqwz1ta5x4o2kx; path=/; HttpOnly
+      dataserviceversion:
+      - 1.0;
+      x-aspnet-version:
+      - 4.0.30319
+      x-powered-by:
+      - ASP.NET
+      date:
+      - Thu, 17 Sep 2015 09:48:46 GMT
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<feed
+        xml:base=\"http://www.museumkaart.nl/Services/SchatkamerService.svc/\" xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\"
+        xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://www.w3.org/2005/Atom\">\r\n  <title type=\"text\">GetSearchResult</title>\r\n
+        \ <id>http://www.museumkaart.nl/Services/SchatkamerService.svc/GetSearchResult</id>\r\n
+        \ <updated>2015-09-17T09:48:46Z</updated>\r\n  <link rel=\"self\" title=\"GetSearchResult\"
+        href=\"GetSearchResult\" />\r\n  <entry>\r\n    <id>http://www.museumkaart.nl/Services/SchatkamerService.svc/SchatkamerKaartSet(10455)</id>\r\n
+        \   <title type=\"text\"></title>\r\n    <updated>2015-09-17T09:48:46Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"TreasuryCard\" href=\"SchatkamerKaartSet(10455)\" />\r\n    <category
+        term=\"Museumvereniging.Shared.Treasury.TreasuryCard\" scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\"
+        />\r\n    <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">10455</d:Id>\r\n        <d:MuseumId m:type=\"Edm.Int32\">1163</d:MuseumId>\r\n
+        \       <d:Title>NIJKERK</d:Title>\r\n        <d:SubTitle>Museum Nijkerk</d:SubTitle>\r\n
+        \       <d:Description>x</d:Description>\r\n        <d:ImageUrl>//cdn.museum.nl/cards/240x135/af48bd59-ad30-4f11-8ede-cd2518aa4e24\\Venenstraat
+        16 foto Gerrit van de Veen.jpg</d:ImageUrl>\r\n        <d:HasPromotions m:type=\"Edm.Boolean\">false</d:HasPromotions>\r\n
+        \       <d:IsPromotion m:type=\"Edm.Boolean\">false</d:IsPromotion>\r\n        <d:IsParticipant
+        m:type=\"Edm.Boolean\">true</d:IsParticipant>\r\n        <d:EndDate m:type=\"Edm.DateTime\"
+        m:null=\"true\" />\r\n        <d:DetailUrl>/museum/Museum+Nijkerk/Museum+Nijkerk.aspx</d:DetailUrl>\r\n
+        \       <d:MagazineTheme m:null=\"true\" />\r\n        <d:MagazineThemeTitle
+        m:null=\"true\" />\r\n        <d:City m:null=\"true\" />\r\n        <d:Address
+        m:null=\"true\" />\r\n        <d:Type m:type=\"Edm.Int32\">1</d:Type>\r\n
+        \       <d:IsKidsproof m:type=\"Edm.Boolean\" m:null=\"true\" />\r\n      </m:properties>\r\n
+        \   </content>\r\n  </entry>\r\n</feed>"
+    http_version: '1.1'
+  recorded_at: Thu, 17 Sep 2015 09:48:44 GMT
+recorded_with: VCR 2.9.3
