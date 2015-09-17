@@ -1,6 +1,6 @@
 # Museumkaart
 
-Query the museumjaarkaart database for museums in The Netherlands.
+Query the museumjaarkaart database for museums in The Netherlands. The is fetched from a xml feed from museumjaarkaart.nl.
 
 ## Installation
 

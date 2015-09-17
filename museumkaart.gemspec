@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Museumkaart::VERSION
   spec.authors       = ["Henk Meijer"]
   spec.email         = ["meijerhenk@gmail.com"]
-  spec.description   = %q{Ruby interface for querying museums in the museumjaarkaart database}
-  spec.summary       = %q{Ruby interface for querying museums in the museumjaarkaart database}
+  spec.description   = %q{Ruby gem for querying museums in the museumjaarkaart database}
+  spec.summary       = %q{Ruby gem for querying museums in the museumjaarkaart database}
   spec.homepage      = ""
   spec.license       = "MIT"
 
