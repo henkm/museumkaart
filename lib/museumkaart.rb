@@ -34,8 +34,8 @@ module Museumkaart
 	# datetype=maakt%20niet%20uit
 	# kidsProof=0
 	
-	def self.search(keyword: "", longitude: "", latitude: "", distance: 10, card: 1,type: "-1", city: "")
-		url = "http://www.museumkaart.nl/Services/SchatkamerService.svc/GetSearchResult?&start=0&count=100&keyword=%27#{CGI::escape(keyword)}%27&city=%27#{city}%27&longitude=%27#{longitude}%27&lattitude=%27#{latitude}%27&distance=%27#{distance}%27&provinceFilter=%27%27&startdate=%27%27&enddate=%27%27&lastChance=0&filters=%27%27&lFacilities=%27%27&mFacilities=%27%27&type=#{type}&card=1&cityName=%27%27&theme=&allMembers=&kidsProof=0"
+	def self.search(keyword: "", longitude: "", latitude: "", distance: 10, card: 1, city: "")
+		url = "http://www.museumkaart.nl/Services/SchatkamerService.svc/GetSearchResult?&start=0&count=100&keyword=%27#{CGI::escape(keyword)}%27&city=%27#{city}%27&longitude=%27#{longitude}%27&lattitude=%27#{latitude}%27&distance=%27#{distance}%27&provinceFilter=%27%27&startdate=%27%27&enddate=%27%27&lastChance=0&filters=%27%27&lFacilities=%27%27&mFacilities=%27%27&type=0&card=1&cityName=%27%27&theme=&allMembers=&kidsProof=0"
 
 		list = []
 		doc = Nokogiri::XML(open(url))
